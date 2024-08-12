@@ -25,7 +25,7 @@ helm upgrade --install llm-inference-svc chart/
 ```
 3. Access the Service
 ```
-curl -X POST "http://<external-ip>:8080/generate-text" -H "Content-Type: application/json" -d '{"prompt": "Once upon a time", "max_length": 50}'
+curl -X POST "http://<external-ip>/generate-text" -H "Content-Type: application/json" -d '{"prompt": "Once upon a time", "max_length": 50}'
 ```
 
 
