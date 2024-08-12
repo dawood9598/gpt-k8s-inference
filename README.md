@@ -1,8 +1,7 @@
 This repository contains the necessary files and instructions to deploy a GPT-2 language model on Kubernetes using Helm. The setup includes creating a Kubernetes deployment, service, and ingress to expose the model for inference.
 
 # Overview
-The project demonstrates how to deploy an LLM (GPT-2) on Kubernetes. The application is containerized and deployed with a Helm chart, allowing for easy management and scalability. The service is exposed via a LoadBalancer, making it accessible for external use.
-Features
+The project demonstrates how to deploy an LLM (GPT-2) on Kubernetes. The application is containerized and deployed with a Helm chart, allowing for easy management and scalability. 
 
 # Containerized GPT Model: 
 - The GPT-2 model is packaged in a Docker container for easy deployment.
@@ -10,7 +9,7 @@ Features
 
 # Prerequisites
 1. Kubernetes cluster (Minikube, EKS, GKE, AKS, etc.)
-2. Helm 3.x
+2. Helm
 3. Docker
 4. kubectl
 
