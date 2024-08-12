@@ -17,20 +17,14 @@ Features
 # Getting Started
 1. Clone the Repository
 ```
-git clone https://github.com/yourusername/gpt2-k8s-setup.git
+git clone git@github.com:dawood9598/gpt-k8s-inference.git
 ```
-2. Build the Docker Image
-```
-cd gpt2-k8s-setup
-docker build -t yourusername/gpt2-api:latest .
-docker push yourusername/gpt2-api:latest
-```
-3. Deploy with Helm
+2. Deploy with Helm
 Install or upgrade the Helm chart to deploy the GPT-2 model on your Kubernetes cluster.
 ```
-helm upgrade --install llm-inference-svc ./helm/llm-inference-svc
+helm upgrade --install llm-inference-svc chart/  
 ```
-4. Access the Service
+3. Access the Service
 ```
 curl -X POST "http://<external-ip>:8080/generate-text" -H "Content-Type: application/json" -d '{"prompt": "Once upon a time", "max_length": 50}'
 ```
