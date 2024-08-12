@@ -1,0 +1,12 @@
+replicaCount: 1
+
+image:
+  repository: dawood9598/llm-inference-svc
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources: {}
